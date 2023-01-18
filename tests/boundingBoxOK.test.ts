@@ -52,9 +52,6 @@ test("login",async() =>{
         await page.mouse.down()
         await page.mouse.move(imageBox.x + imageBox.width/2 + imageBox.width/4, imageBox.y + imageBox.height/2 + imageBox.height/4 )
         await page.mouse.up()
-        const box= page.locator("//*[@id=\"img-63c547ea7a4c3aadcdd5a900\"]")
-        const boxBoundingBox = await box.boundingBox()
-        //console.log("box ",boxBoundingBox.width+" "+boxBoundingBox.height+" "+boxBoundingBox.x+" "+boxBoundingBox.y)
      }
      
      //save
